@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "target": "ES2016",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitThis": true,
+    "strict": true,
+    "lib": [
+      "ESNext"
+    ],
+    "outDir": "dist",
+    "declaration": true
+  },
+  "exclude": [
+    "dist"
+  ]
+}

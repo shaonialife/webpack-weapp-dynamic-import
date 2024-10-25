@@ -1,0 +1,38 @@
+{
+  "name": "webpack-weapp-dynamic-import",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "taro",
+    "weapp",
+    "miniprogram",
+    "webpack",
+    "dynamic",
+    "import"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "author": "lizhihua",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaonialife/webpack-weapp-dynamic-import.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "webpack": "^5.95.0"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.12",
+    "lodash": "^4.17.21"
+  }
+}
