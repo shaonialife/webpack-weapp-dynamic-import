@@ -5,7 +5,8 @@
   "main": "index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "taro",
@@ -34,5 +35,8 @@
   "dependencies": {
     "@types/lodash": "^4.17.12",
     "lodash": "^4.17.21"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
