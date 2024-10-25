@@ -10,12 +10,14 @@
 
 3. 可以在 webpackChain 中添加该插件
 ```js
+import WeappDynamicImportPlugin from 'webpack-weapp-dynamic-import';
+
 export default defineConfig(async (merge, { command, mode }) => {
   const baseConfig = {
     mini: {
       webpackChain(chain) {
         // 添加自定义插件支持
-        chain.plugin('dynamic-import').use(AsyncRequirePlugin);
+        chain.plugin('dynamic-import').use(WeappDynamicImportPlugin);
 
         // 如果要将部分 npm 包也进行异步化加载，可以自行添加 cacheGroups 处理逻辑
         // 分组名也要以 async- 开头才会使用 require.async 加载
